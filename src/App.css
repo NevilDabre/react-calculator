@@ -1,33 +1,76 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
+.content {
   background-color: #282c34;
   min-height: 100vh;
+  color: aliceblue;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 10vh;
+  font-size: 4vh;
+  color: #11998e;
+  background: -webkit-linear-gradient(#38ef7d, #11998e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
 }
 
-.App-link {
-  color: #61dafb;
+.container{
+  margin: 10vh 40vh;
+  height: 40vh;
+  background: #222411;
+  box-shadow: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.displayOutput{
+  align-items: center;
+  width: 97%;
+  margin: 1%;
+  position: relative;
+  height: 15%;
+  border-radius: 5px;
+  font-size: 40px;
+  direction: rtl;
+}
+
+.buttons-holder{
+  align-items: center;
+  width: 97%;
+  margin: 1%;
+}
+
+.numeric-buttons-holder .calculator-button{
+  padding: 7%;
+  border-radius: 50%;
+  border: none;
+  margin: 10px;
+  background-color: aquamarine;
+}
+
+.numeric-buttons-holder .calculator-button :focus{
+outline: none;
+}
+
+.math-buttons-holder .calculator-button{
+  padding: 15%;
+  border-radius: 50%;
+  border: none;
+  margin: 10px;
+  background-color: rgb(177, 233, 151);
+  display: inline-block;
+  font-size: 22px;
+}
+
+.numeric-buttons-holder{
+  float:left;
+  width:70%;
+}
+
+.math-buttons-holder{
+  float:left;
+  overflow: hidden;
 }
